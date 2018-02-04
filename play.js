@@ -60,11 +60,12 @@ var playState={
             this.category_buttons.push(b);
             game.add.text(20, 185+i*100, TEXT.category_names[i], { font: '50pt Arial', fill: '#FFFFFF', align:'center' });
         }
+        this.manageCategories(this.category_buttons[0]);
     },
 
     update:function() {
         //ensure that the game stay fullscreen
-        game.input.onDown.add(this.goFullScreen, this);
+        //game.input.onDown.add(this.goFullScreen, this);
     },
 
     goFullScreen:function(){

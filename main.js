@@ -21,6 +21,7 @@ var game = new Phaser.Game(1920, 1080, Phaser.AUTO, 'game');
 game.state.add('load', loadState);
 game.state.add('menu', menuState);
 game.state.add('play', playState);
+game.state.add('end', endState);
 
 var days_selected = [];
 var TEXT = text_localizations.it;

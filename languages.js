@@ -2,7 +2,9 @@ text_localizations={
 	it:{
 		week_names:["Lunedì","Martedì","Mercoledì","Giovedì","Venerdì","Sabato","Domenica"],
 		category_names:["frutta","verdura","carne","pesce","formaggio","cereali","bevande","dolci","condimento"],
-
+		finish_button: "FINE",
+		end_message: "Bravo! hai organizzato i pasti della prossima settimana! clicca qui sotto per ricominciare",
+		restart_button: "RICOMINCIA",
 		//name, category
 		food:[
 		["mela","frutta"],
