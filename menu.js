@@ -23,12 +23,18 @@ var menuState={
         var elements_found=0;
         for (var i=0;i<days_selected.length;i++){
             if (days_selected[i].includes(true)){
+                var posX=500+Math.floor(elements_found%9)*(ICON_DIM[0]+20);
+                var posY=50+Math.floor(elements_found/9)*(ICON_DIM[1]+20);
                 var sprite = game.add.sprite(
-                    500+Math.floor(elements_found%9)*(ICON_DIM[0]+20),
-                    50+Math.floor(elements_found/9)*(ICON_DIM[1]+20),
+                    posX,
+                    posY,
                     'icons');
                 sprite.frame = i;
                 elements_found++;
+                game.add.text(
+                    posX+20, 
+                    posY+100, 
+                    TEXT.food[i][0], {font: '15pt Arial', fill: '#FFFFFF'})
             }
         }
     }

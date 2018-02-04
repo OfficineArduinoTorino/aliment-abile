@@ -4,6 +4,7 @@ var playState={
     category_buttons:[],
     icons_positions:[[],[],[],[],[],[],[]],
     sprites:[],
+    icons_text:[],
 
     create:function() {
         game.world.removeAll()
@@ -14,6 +15,7 @@ var playState={
         var already_created=!(this.icons_positions[ACTUAL_DAY].length==0);
 
         this.sprites=[];
+        this.icons_text=[];
 
         var category_quantities=[];
         for (var i=0;i<TEXT.category_names.length;i++){
@@ -47,6 +49,9 @@ var playState={
             }
 
             this.sprites.push(sprite);
+
+            this.icons_text.push(game.add.text(0, 0, TEXT.food[i][0], {
+                font: '15pt Arial', fill: '#FFFFFF'}));
         }
 
         game.add.button(1173, 54, 'back_button', this.backToMenu, this);
@@ -66,6 +71,10 @@ var playState={
     update:function() {
         //ensure that the game stay fullscreen
         //game.input.onDown.add(this.goFullScreen, this);
+        for (var i=0;i<this.icons_text.length;i++){
+            this.icons_text[i].x=this.sprites[i].x+20;
+            this.icons_text[i].y=this.sprites[i].y+100;
+        }
     },
 
     goFullScreen:function(){
