@@ -1,0 +1,50 @@
+text_localizations={
+	it:{
+		week_names:["Lunedì","Martedì","Mercoledì","Giovedì","Venerdì","Sabato","Domenica"],
+		category_names:["frutta","verdura","carne","pesce","formaggio","cereali","bevande","dolci","condimento"],
+
+		//name, category
+		food:[
+		["mela","frutta"],
+		["pera","frutta"],
+		["mandarino","frutta"],
+		["banana","frutta"],
+		["hotdog","carne"],
+		["humburger","carne"],
+		["latte","bevande"],
+		["miele","dolci"],
+		["sale","condimento"],
+		["zucchero","dolci"],
+		["pasta","cereali"],
+		["pane","cereali"],
+		["cioccolato","dolci"],
+		["biscotti","dolci"],
+		["the","bevande"],
+		["pollo","carne"],
+		["coniglio","carne"],
+		["salame","carne"],
+		["provola","formaggio"],
+		["prosciutto","carne"],
+		["zucchine","verdura"],
+		["patate","verdura"],
+		["carote","verdura"],
+		["insalata","verdura"],
+		["pomodori","verdura"],
+		["coca cola","bevande"],
+		["acqua naturale","bevande"],
+		["acqua frizzante","bevande"],
+		["arancie","frutta"],
+		["albicocca","frutta"],
+		["ravanello","verdura"],
+		["grissini","cereali"],
+		["tonno","pesce"],
+		["olio","condimento"],
+		["aceto","condimento"],
+		["marmellata","dolci"],
+		["orata","pesce"],
+		["rucola","verdura"],
+		["mozzarella","formaggio"],
+		["maionese","condimento"]
+		]
+	}
+};
