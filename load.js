@@ -1,6 +1,7 @@
 var loadState={
     preload: function() {
         game.scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL;
+        game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     	game.load.image('background_table', 'assets/background_table.png');
         game.load.image('background_menu', 'assets/background_menu.png');
         game.load.spritesheet('icons', 'assets/food_pics.png', ICON_DIM[0], ICON_DIM[1]);

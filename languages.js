@@ -1,4 +1,5 @@
 text_localizations={
+	//italian localization
 	it:{
 		week_names:["Lunedì","Martedì","Mercoledì","Giovedì","Venerdì","Sabato","Domenica"],
 		category_names:["frutta","verdura","carne","pesce","formaggio","cereali","bevande","dolci","condimento"],
